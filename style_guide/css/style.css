@@ -1,0 +1,384 @@
+/*
+ *
+ * 
+ *
+ */
+
+/* =========================================================
+ * fonts
+ * ========================================================= */
+
+ 
+@font-face {
+    font-family: Jaapokki;
+    src: url('../fonts/jaapokki-regular.eot');
+    src: url('../fonts/jaapokki-regular.eot') format('embedded-opentype'),
+         url('../fonts/jaapokki-regular.woff') format('woff'),
+         url('../fonts/jaapokki-regular.ttf') format('truetype'),
+         url('../fonts/jaapokki-regular.svg#jaapokki-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================================================
+ * Baseline
+ * ========================================================= */
+
+body {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 970px !important;
+}
+
+.row {
+	clear: both;
+}
+
+.row:before {
+	display: table;
+	content: " ";
+}
+
+.row:after {
+	clear: both;
+}
+
+.third {
+	width: 33%;
+	float: left;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.clearfix {
+    display: inline-block;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    width: 100%;
+}
+
+/* =========================================================
+ * Text
+ * ========================================================= */
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+}
+
+h1, h2 {
+	font-family: Jaapokki, sans-serif;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.8em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+h3.section-title {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	line-height: 2;
+	color: rgba(0,0,0,0.3);
+}
+
+#type h1, #type h2, #type h3, #type h4, #type p {
+	margin: 20px 0 !important;
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1em;
+}
+
+p.caption {
+	font-size: 0.8em;
+}
+
+p.button {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* =========================================================
+ * Color
+ * ========================================================= */
+
+.red {
+	background: #F26E51;
+}
+
+.orange {
+	background: #F5D69F;
+}
+
+.green {
+	background: #65C1AE;
+}
+.blue {
+	background: #81B9DF;
+}
+.violet {
+	background: #DCBED6;
+}
+.indigo {
+	background: #ADB2D9;
+}
+
+
+/* =========================================================
+ * Branding
+ * ========================================================= */
+
+.hero {
+	height: 500px;
+	background-color: #F16345;
+	background-repeat: repeat-x;
+	background-size: 580px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 80px;
+	padding: 30px 0;
+}
+
+#logo {
+	width: 270px;
+	margin: 0 auto 26px;
+	overflow: hidden;
+	display: block;
+	padding-top: 100px;
+}
+
+.color-swatch {
+	float: left;
+	width: 140px;
+	margin: 0 20px 20px 0;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+}
+
+section {
+	padding: 20px 0;
+}
+
+.font-caption-container {
+	float: left;
+	width: 180px;
+}
+
+
+/* =========================================================
+ * Elements
+ * ========================================================= */
+
+a, button, a:focus, button:focus {
+	outline: 0 !important;
+}
+
+input[type=submit] {
+	width: 100px;
+}
+
+button, input[type=submit] {
+	background: #65C1AE;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 25px;
+	height: 45px;
+	outline: 0 !important;
+	border-bottom: 3px solid #2DA089;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px;
+}
+
+	button.error {
+		background: #F26E51;
+		border-bottom: 3px solid #C75138;
+	}
+
+	button.disabled {
+		background: rgb(228, 228, 228);
+		color: rgb(186, 186, 186);
+		border-bottom: 3px solid rgb(205, 205, 205);
+	}
+
+	nav button {
+		float: right;
+		margin: 11px;
+	}
+
+.navbar {
+	min-height: 64px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 30px;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.08);
+	margin: 20px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar.mobile {
+	border-radius: 0;
+	max-width: 400px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.10);
+	margin: 0;
+}
+
+.nav-logo {
+	display: inline-block;
+	float: left;
+	padding: 20px 30px 15px 40px;
+	font-size: 34px;
+	font-family: Jaapokki, sans-serif;
+	line-height: 1;
+	color: #2C9F89;
+}
+
+.navbar ul {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.navbar li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 22px;
+	padding-top: 24px;
+	color: rgba(0,0,0,0.6);
+}
+
+.navbar li.selected {
+	border-bottom: 2px solid #A8D9BF;
+	color: #2C9F89;
+}
+
+.simulated-device {
+	width: 400px;
+	height: 200px;
+	background: #ececec;
+	border: 3px solid rgb(195, 195, 195);
+	border-bottom: none;
+}
+
+input {
+	display: block;
+	width: 380px;
+	padding: 20px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1em;
+	line-height: 2;
+	opacity: 1;
+	border: 0;
+	max-width: 400px;
+	outline: none;
+	resize: none;
+}
+
+textarea {
+	display: block;
+	margin: 20px 0;
+	min-height: 200px;
+	padding: 20px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1em;
+	line-height: 2;
+	opacity: 1;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 3px solid rgba(0,0,0,0.2);
+	outline: none;
+	resize: none;
+	width: 460px;
+}
+
+footer {
+	padding: 60px;
+	background: #ececec;
+	margin-top: 100px;
+	color: gray;
+}
+
+.wireframes {
+	width: 100%;
+}
+
+.icon {
+	height: 72px;
+	width: 72px;
+	display: inline-block;
+	float: left;
+	background: rgba(0,0,0,0.1);
+}
+
+.form-line {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 3px solid rgba(0,0,0,0.1);
+	width: 500px;
+	margin: 10px;
+	margin-left: 0;
+}
+
+.form-line.error {
+	border: 1px solid #f16345;
+	border-bottom: 3px solid #f16345;
+}
+
+.form-line.error .icon {
+	background-color: #f26e51;
+}
+
+.form-line.success {
+	border: 1px solid #65c1ae;
+	border-bottom: 3px solid #65c1ae;
+}
+
+.form-line.success input {
+	color: black;
+}
+
+.form-line.success .icon {
+	background-color: #a8d9bf;
+}
+
+.icon.user {
+	background-image: url('../img/icons/user.svg');
+	background-size: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon.mail {
+	background-image: url('../img/icons/email.svg');
+	background-size: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
