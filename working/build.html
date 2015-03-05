@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	
+	<title>Rube Goldbery Greeter</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="js/horwheel.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<div class="white-border top"></div>
+	<div class="white-border bottom"></div>
+
+	<a href="index.html">
+		<div id="logo">MESSAGE<br>MACHINE</div>
+	</a>
+
+	<div class="buttonDepthIcon" id="infoBtn">
+		<div class="topBtn">INFO</div>
+		<div class="bottomBtn"></div>
+	</div>
+
+	<a href="build.html">
+		<div class="buttonDepthIcon activated" id="buildBtn">
+			<div class="topBtn">BUILD</div>
+			<div class="bottomBtn"></div>
+		</div>
+	</a>
+
+	<div id="siteInfo" class="hidden">
+	</div>
+
+	<div id="input" class="onscreen single-line">
+
+		<span class="send-prompt">Send Message to:</span>
+		<textarea maxlength="10" placeholder="name" id="name-textarea"></textarea>
+		
+		<textarea maxlength="16" placeholder="type message" id="message-textarea" class="hidden"></textarea>
+
+		<div class="buttonDepthIcon" id="done-message">
+			<div class="topBtn">Next</div>
+			<div class="bottomBtn"></div>
+		</div>
+	</div>
+
+	<div id="wrapper" class="offscreen">
+		<div id="rube-container">
+			<div class='block part' id='spacer'></div>
+		</div>
+	</div>
+	<div id="picker" class="offscreen">
+		<div id="picker-1" class="picker-set">
+			<button class="add" value="1">Add Part #1</button>
+			<button class="add" value="2">Add Part #2</button>
+			<button class="add" value="3">Add Part #3</button>
+		</div>
+
+		<div id="picker-2" class="picker-set enterstage">
+			<button class="add" value="4">Add Part #4</button>
+			<button class="add" value="5">Add Part #5</button>
+			<button class="add" value="6">Add Part #6</button>
+		</div>
+
+		<div id="picker-3" class="picker-set enterstage">
+			<button class="add" value="7">Add Part #7</button>
+			<button class="add" value="8">Add Part #8</button>
+			<button class="add" value="9">Add Part #9</button>
+		</div>
+
+		<div id="picker-4" class="picker-set enterstage">
+			<button class="add" value="10">Add Part #10</button>
+			<button class="add" value="11">Add Part #11</button>
+			<button class="add" value="12">Add Part #12</button>
+		</div>
+
+		<div id="picker-5" class="picker-set enterstage">
+			<button class="add" value="13">Add Part #13</button>
+			<button class="add" value="14">Add Part #14</button>
+			<button class="add" value="15">Add Part #15</button>
+		</div>
+	</div>
+
+	<div id='callToActionBlock' class="offscreen">
+		<img src='./img/handpoint.svg' id='handpoint'>
+	</div>
+
+
+	<div class="white-border left"></div>
+	<div class="white-border right"></div>
+
+<script src="js/build.js"></script>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+/* =========================================================
+ * Media Query Styles
+ * ========================================================= */
+
+@media only screen 
+and (min-width : 720px) {
+
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 960px) {
+	.previewPart {
+		width: 32.333%;
+		padding-bottom: 33.333%;
+	}
+
+}
+
+@media only screen 
+and (max-width : 600px) {
+	.previewPart {
+		width: 49%%;
+		padding-bottom: 50%%;
+	}
+
+}
