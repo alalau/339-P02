@@ -4,25 +4,35 @@
  * ========================================================= */
 
 @media only screen 
-and (min-width : 720px) {
+and (min-width : 550px) {
+
+
+	#wrapper::-webkit-scrollbar {
+	    height: 15px;
+	    padding: 20px;
+	}
+
+	#wrapper::-webkit-scrollbar-track {
+
+	}
+
+	#wrapper::-webkit-scrollbar-thumb {
+	    background: rgba(0,0,0,0.15);
+	    /* border: 2px solid black; */
+	}
 
 }
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen 
-and (max-width : 960px) {
-	.previewPart {
-		width: 32.333%;
-		padding-bottom: 33.333%;
+and (max-width : 550px) {
+	.white-border {
+		display: none;
 	}
-
 }
 
 @media only screen 
 and (max-width : 600px) {
-	.previewPart {
-		width: 49%%;
-		padding-bottom: 50%%;
-	}
+
 
 }

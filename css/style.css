@@ -9,25 +9,24 @@
  * Scrollbars
  * ========================================================= */
 
-#wrapper::-webkit-scrollbar {
-    height: 15px;
-    padding: 20px;
-}
+	#wrapper::-webkit-scrollbar {
+	    height: 15px;
+	    padding: 20px;
+	    background: white;
+	}
 
-#wrapper::-webkit-scrollbar-track {
+	#wrapper::-webkit-scrollbar-track {
 
-}
+	}
 
-#wrapper::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.15);
-    /* border: 2px solid black; */
-}
+	#wrapper::-webkit-scrollbar-thumb {
+	    background: rgba(0,0,0,0.15);
+	    /* border: 2px solid black; */
+	}
 
  /* =========================================================
  * colors
  * ========================================================= */
-
-
 
 	.red {
 		background: #f15956;
