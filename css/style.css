@@ -570,6 +570,7 @@ button#done-message {
 }
 
 #callToActionBlock {
+	pointer-events:none;
 	height: 400px;
 	position: fixed;
 	top: 50%;

@@ -168,11 +168,16 @@ $(function() {
 			Function for creating parts within blocks
         ----------------------------------------------------------- */
 
+        var part_1 = "<div class='block part'><div class='goods'><img src='./img/dominos.svg' id='handpoint'></div></div>"
+
         function createPart( what ){
             // Create the part
-            return(
-                $( "<div class='block part'><div class='goods'><img src='./img/dominos.svg' id='handpoint'></div></div>" )
-            );
+            if (what == 1) {
+                return $(part_1);
+            }
+            else {
+                return( $( "<div class='block part'><div class='goods'>" + what + "</div></div>" ) );
+            }
         }
 
         /* -----------------------------------------------------------
