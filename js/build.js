@@ -1,4 +1,18 @@
-//$(function() {
+$(function() {
+    function spacerSize() {
+        var w = $(window).width() * 0.9;
+        $("#spacer").css({
+            width: w
+        })
+    }
+
+    spacerSize();
+
+    $(window).resize(function() {
+        spacerSize();
+    });
+
+});
 
 		/* -----------------------------------------------------------
 			Move the pointer finger
@@ -13,9 +27,15 @@
                 $("#callToActionBlock").css({
                     left: newLeft
                 })
+                $('#scroll-prompt').css({
+                    opacity: 0
+                })
             } else {
                 $("#callToActionBlock").css({
                     left: ($(window).width() / 2)
+                })
+                $('#scroll-prompt').css({
+                    opacity: 1
                 })
             }
             //console.log("first part: " + offsetFirstPart + " hand: " + offsetHand);
