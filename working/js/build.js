@@ -18,7 +18,7 @@
                     left: ($(window).width() / 2)
                 })
             }
-            console.log("first part: " + offsetFirstPart + " hand: " + offsetHand);
+            //console.log("first part: " + offsetFirstPart + " hand: " + offsetHand);
         }
 
 
@@ -79,8 +79,6 @@
             $('#wrapper').removeClass('offscreen');
             $('#picker').removeClass('offscreen');
             $('#callToActionBlock').removeClass('offscreen');
-            console.log(name);
-            console.log(message);
         });
 
 		/* -----------------------------------------------------------
@@ -188,7 +186,7 @@
 	        $('.goods').each(function() {				// repeate for each part
 	        	var offset = $(this).offset();			//
 	        	var xPos = offset.left;					// get distance from left
-	        	var threshold = $(window).width() - ($(window).width() / 4);	// get threshold (half window width)
+	        	var threshold = ($(window).width() / 2);	// get threshold (half window width)
 	        	if (xPos < threshold) {	
 	        		$(this).addClass("activated");		// add class if passed threshold
 	        	}
@@ -202,7 +200,6 @@
         //getStarted();
 
         function buildMachine() {
-            parts.push(createCallToAction( "Friend" ) );
             parts.push(createBuild( "Part 1" ) );
             parts.push(createBuild( "Part 3" ) );
             parts.push(createBuild( "Part 5" ) );
@@ -246,6 +243,8 @@
 	        var n = $('#rube-container').width() * 2;
             if (partCount > 2) {
     		  $('#wrapper').animate({ scrollLeft: n }, 1000, "easeOutCubic" );
+            } else {
+               $('#callToActionBlock').removeClass('choose');
             }
 	    });
 
