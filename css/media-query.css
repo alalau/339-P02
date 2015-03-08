@@ -3,31 +3,36 @@
  * Media Query Styles
  * ========================================================= */
 
-@media only screen 
-and (min-width : 550px) {
-
-
-	#wrapper::-webkit-scrollbar {
-	    height: 15px;
-	    padding: 20px;
-	}
-
-	#wrapper::-webkit-scrollbar-track {
-
-	}
-
-	#wrapper::-webkit-scrollbar-thumb {
-	    background: rgba(0,0,0,0.15);
-	    /* border: 2px solid black; */
-	}
-
-}
-
 /* Tablets (portrait and landscape) ----------- */
 @media only screen 
 and (max-width : 550px) {
 	.white-border {
 		display: none;
+	}
+
+	#input textarea {
+		font-size: 2em;
+		height: 45px;
+	}
+
+	#input h2 {
+		font-size: 1em;
+	}
+
+	.buttonDepthIcon div {
+		width: 45px;
+		overflow: hidden;
+		color: rgba(0,0,0,0) !important;
+		border-radius: 30px;
+	}
+
+	.buttonDepthIcon {
+		width: 45px;
+	}
+
+	.topBtn {
+		background-size: 45px !important;
+		background-position: -2px -2px !important;
 	}
 }
 

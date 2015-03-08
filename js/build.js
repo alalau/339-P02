@@ -168,15 +168,58 @@ $(function() {
 			Function for creating parts within blocks
         ----------------------------------------------------------- */
 
-        var part_1 = "<div class='block part'><div class='goods'><img src='./img/dominos.svg' id='handpoint'></div></div>"
+        var part_dominos = "<div class='block part'><div class='goods'><img src='./img/dominos.svg'></div></div>";
+        var part_skateboard = "<div class='block part'><div class='goods'><img src='./img/skateboard.png'></div></div>";
+        var part_frog = "<div class='block part'><div class='goods'><img src='./img/frog.png'></div></div>";
+
+        var part_coffee = "<div class='block part'><div class='goods'><img src='./img/coffee.png'></div></div>";
+        var part_beer = "<div class='block part'><div class='goods'><img src='./img/beer.png'></div></div>";
+        var part_arrow = "<div class='block part'><div class='goods'><img src='./img/arrow.png'></div></div>";
+        var part_rocket = "<div class='block part'><div class='goods'><img src='./img/rocket.png'></div></div>";
+
+        var part_catvideo = "<div class='block part'><div class='goods'><img src='./img/catvideo.png'></div></div>" ;
+        var part_plant = "<div class='block part'><div class='goods'><img src='./img/plant.png'></div></div>" ;
 
         function createPart( what ){
             // Create the part
             if (what == 1) {
-                return $(part_1);
+                return $(part_dominos);
+            }
+            if (what == 2) {
+                return $(part_skateboard);
+            }
+            if (what == 3) {
+                return $(part_frog);
+            }
+            if (what == 4) {
+                return $(part_catvideo);
+            }
+            if (what == 5) {
+                return $(part_plant);
+            }
+            if (what == 6) {
+                return $(part_arrow);
+            }
+            if (what == 7) {
+                return $(part_rocket);
+            }
+            if (what == 8) {
+                return $(part_coffee);
+            }
+            if (what == 9) {
+                return $(part_beer);
+            }
+            else if (what == 10) {
+                return $("<div class='block part last'><div class='goods'><img src='./img/gun.png'><div class='gun-message'>" + message + "</div></div>");
+            }
+            else if (what == 11) {
+                return $("<div class='block part last'><div class='goods'><img src='./img/film.png'><div class='film-message'>" + message + "</div></div>");
+            }
+            else if (what == 12) {
+                return $("<div class='block part last'><div class='goods'><img src='./img/neon.png'><div class='neon-message'>" + message + "</div></div>");
             }
             else {
-                return( $( "<div class='block part'><div class='goods'>" + what + "</div></div>" ) );
+                return( $( "<div class='block part'><div class='goods'>oops something went wrong...</div></div>" ) );
             }
         }
 
@@ -265,9 +308,9 @@ $(function() {
             partCount ++;
 	        var newPart = createPart(val);
 	        $('#rube-container').append(newPart);
-	        var n = $('#rube-container').width() * 2;
+	        var n = $('#rube-container').width() * 1.5;
             if (partCount > 2) {
-    		  $('#wrapper').animate({ scrollLeft: n }, 1000, "easeOutCubic" );
+    		  //$('#wrapper').animate({ scrollLeft: n }, 2000, "easeOutCubic" );
             } else {
                $('#callToActionBlock').removeClass('choose');
             }

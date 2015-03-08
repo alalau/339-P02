@@ -66,6 +66,7 @@ body {
 	font-size: 15px;
 	font-family: 'Varela Round', sans-serif;
 	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 button {
@@ -338,6 +339,7 @@ nav, #logo, #buildBtn {
 	height: 100%;
 	max-height: 400px;
 	min-width: 100%;
+	padding-right: 100px;
 }
 
 .block {
@@ -353,6 +355,7 @@ nav, #logo, #buildBtn {
 	font-size: 2em;
 	float: left;
 	min-width: 300px;
+	position: relative;
 }
 
 .goods.activated {
@@ -396,6 +399,9 @@ nav, #logo, #buildBtn {
 
 .picker-img img {
 	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .picker-label {
@@ -606,6 +612,12 @@ img#handpoint {
 	-o-transition: 		transform 250ms ease;
 }
 
+.part img {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+}
+
 #callToActionBlock.choose img#handpoint {
 	transform: 			rotate(90deg) translateY(-40px);
 	-webkit-transform: 	rotate(90deg) translateY(-40px);
@@ -638,4 +650,27 @@ img#handpoint {
 
 #callToActionBlock.choose #scroll-prompt {
 	opacity: 0;
+}
+
+.gun-message {
+	position: absolute;
+	top: 40%;
+	right: 50px;
+	width: 220px;
+	text-align: center;
+}
+
+.film-message, .neon-message {
+	position: absolute;
+	right: 50px;
+	top: 30%;
+	width: 320px;
+	text-align: center;
+}
+
+.neon-message {
+	top: 35%;
+	font-size: 1.5em;
+	text-shadow: 0 0 5px black;
+	color: #f15956;
 }
