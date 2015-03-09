@@ -15,32 +15,73 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="css/grid.css">
+
+</style>
+
 </head>
 
-<body>
+<body id="about">
+
+	<div class="white-border top"></div>
+	<div class="white-border bottom"></div>
+	<div class="white-border left"></div>
+	<div class="white-border right"></div>
 
 	<a href="index.html">
-		<div id="logo"></div>
+		<div id="logo">MESSAGE<br>MACHINE</div>
 	</a>
+
+	<div class="buttonDepthIcon activated" id="infoBtn">
+		<div class="topBtn">INFO</div>
+		<div class="bottomBtn"></div>
+	</div>
 
 	<a href="build.html">
-		<button id="buildBtn">+ Build</button>
+		<div class="buttonDepthIcon" id="buildBtn">
+			<div class="topBtn">BUILD</div>
+			<div class="bottomBtn"></div>
+		</div>
 	</a>
 
-	<nav>
-		<ul>
-			<li><a id="homeLink" href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="parts.html">Parts</a></li>
-		</ul>
-	</nav>
-
-	<div class="container pushBelowHeader">
-		<h1>About</h1>
-		<p>Text about the Rube Golberg Message Machine</p>
-		<p>Cartoon Avatars of Rachael &amp; Aaron</p>
-		<p>Corresponding Contact info</p>
+	<div class="grid"> 
+		<article>
+		<div class="container pushBelowHeader">
+		<h1>HELLO!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ullamcorper tortor, et congue lacus consequat at. In interdum ut neque quis porttitor. Nullam ultrices, massa in posuere sollicitudin, nibh nisi vestibulum diam, non ullamcorper tellus ex et dolor. Integer molestie massa ante, eget hendrerit risus malesuada nec.<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ullamcorper tortor, et congue lacus consequat at. In interdum ut neque quis porttitor. Nullam ultrices, massa in posuere sollicitudin, nibh nisi vestibulum diam, non ullamcorper tellus ex et dolor. Integer molestie massa ante, eget hendrerit risus malesuada nec.</p>
+		</div>
+		</article>
 	</div>
+
+	<div class="grid"> 
+
+      <div class="col-5of10"> 
+
+        <article id="aaron">
+
+            <div style="text-align: center"><img width="216px" height="288px" alt="Aaron" src="img/aaron-avatar.png" width="100" /></div>
+            <h2>AARON</h2>
+
+          <p><a href="http://www.lalau.ca">www.lalau.ca</a></p>
+
+        </article>
+
+      </div> 
+
+
+      <div class="col-2of10"> 
+
+        <article id="rachael">
+
+            <div style="text-align: center"><img width="216px" height="288px" alt="Rachael" src="img/rach-avatar.png" width="100" /></div>
+            <h2>RACHAEL</h2>
+
+          <p><a href="http://www.raeicky.com">www.raeicky.com</a> </p>
+
+        </article>
+
+      </div>
+    </div> 
 
 </body>
 </html>

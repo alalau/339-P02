@@ -10,12 +10,12 @@
 
  
 @font-face {
-    font-family: Jaapokki;
-    src: url('../fonts/jaapokki-regular.eot');
-    src: url('../fonts/jaapokki-regular.eot') format('embedded-opentype'),
-         url('../fonts/jaapokki-regular.woff') format('woff'),
-         url('../fonts/jaapokki-regular.ttf') format('truetype'),
-         url('../fonts/jaapokki-regular.svg#jaapokki-regular') format('svg');
+    font-family: Varela Round;
+    src: url('../fonts/varelaRound-regular.eot');
+    src: url('../fonts/varelaRound-regular.eot') format('embedded-opentype'),
+         url('../fonts/varelaRound-regular.woff') format('woff'),
+         url('../fonts/varelaRound-regular.ttf') format('truetype'),
+         url('../fonts/varelaRound-regular.svg#varelaRound-regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -75,7 +75,7 @@ h1, h2, h3, h4 {
 }
 
 h1, h2 {
-	font-family: Jaapokki, sans-serif;
+	font-family: Varela Round, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -126,25 +126,29 @@ p.button {
  * ========================================================= */
 
 .red {
-	background: #F26E51;
+	background: #f15956;
 }
 
-.orange {
-	background: #F5D69F;
+.yellow {
+	background: #ffde15;
 }
 
-.green {
-	background: #65C1AE;
+.purple {
+	background: #cb9ac7;
 }
 .blue {
-	background: #81B9DF;
+	background: #1ebaed;
 }
-.violet {
-	background: #DCBED6;
+.dark-green {
+	background: #1bb16a;
 }
-.indigo {
-	background: #ADB2D9;
+.green {
+	background: #6fbf46;
 }
+.dark-gray {
+	background: #494949;
+}
+
 
 
 /* =========================================================
@@ -170,7 +174,7 @@ p.button {
 
 .color-swatch {
 	float: left;
-	width: 140px;
+	width: 115px;
 	margin: 0 20px 20px 0;
 	text-align: center;
 	padding: 20px 0;
