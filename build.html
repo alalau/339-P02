@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 	
-	<title>Rube Goldbery Greeter</title>
+	<title>Rube Goldbery Message Machine</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -23,16 +23,19 @@
 	<div class="white-border top"></div>
 	<div class="white-border bottom"></div>
 
-	<a href="index.html">
-		<div id="logo">MESSAGE<br>MACHINE</div>
+	<a href="index.php">
+		<div id="logo">
+		</div>
 	</a>
 
-	<div class="buttonDepthIcon" id="infoBtn">
-		<div class="topBtn">INFO</div>
-		<div class="bottomBtn"></div>
-	</div>
+	<a href="build.html" class="headerBtn">
+		<div class="buttonDepthIcon" id="infoBtn">
+			<div class="topBtn">INFO</div>
+			<div class="bottomBtn"></div>
+		</div>
+	</a>
 
-	<a href="build.html">
+	<a href="build.html" class="headerBtn">
 		<div class="buttonDepthIcon activated" id="buildBtn">
 			<div class="topBtn">BUILD</div>
 			<div class="bottomBtn"></div>
@@ -62,114 +65,140 @@
 	</div>
 	<div id="picker" class="offscreen">
 		<div id="picker-1" class="picker-set">
-			<button class="add" value="1">
+			<div class="add" data-value="a">
 				<div class="picker-img">
 					<img src="img/picker-dominos.png" alt="dominos">
 				</div>
 				<div class="picker-label red">
 					Dominos
 				</div>
-			</button>
-			<button class="add" value="2">
+			</div>
+			<div class="add" data-value="b">
 				<div class="picker-img">
 					<img src="img/picker-skateboard.png" alt="skateboard">
 				</div>
 				<div class="picker-label purple">
 					Skateboard
 				</div>
-			</button>
-			<button class="add" value="3">
+			</div>
+			<div class="add" data-value="c">
 				<div class="picker-img">
 					<img src="img/picker-frog.png" alt="frog">
 				</div>
 				<div class="picker-label dark-green">
 					Frog
 				</div>
-			</button>
+			</div>
 		</div>
 
 		<div id="picker-2" class="picker-set enterstage">
-			<button class="add" value="4">
+			<div class="add" data-value="d">
 				<div class="picker-img">
 					<img src="img/picker-cat.png" alt="cat video">
 				</div>
 				<div class="picker-label red">
 					Cat Video
 				</div>
-			</button>
-			<button class="add" value="5">
+			</div>
+			<div class="add" data-value="e">
 				<div class="picker-img">
 					<img src="img/picker-plant.png" alt="plant">
 				</div>
 				<div class="picker-label blue">
 					Plant
 				</div>
-			</button>
+			</div>
 		</div>
 
 		<div id="picker-3" class="picker-set enterstage">
-			<button class="add" value="6">
+			<div class="add" data-value="f">
 				<div class="picker-img">
-					<img src="" alt="">
+					<img src="img/picker-arrow.png" alt="plant">
 				</div>
 				<div class="picker-label red">
 					Arrow
 				</div>
-			</button>
-			<button class="add" value="7">
+			</div>
+			<div class="add" data-value="g">
 				<div class="picker-img">
-					<img src="" alt="">
+					<img src="img/picker-kicks.png" alt="plant">
 				</div>
-				<div class="picker-label red">
-					Rocket
+				<div class="picker-label purple">
+					Kicks
 				</div>
-			</button>
+			</div>
 		</div>
 
 		<div id="picker-4" class="picker-set enterstage">
-			<button class="add" value="8">
+			<div class="add" data-value="h">
 				<div class="picker-img">
 					<img src="img/picker-coffee.png" alt="plant">
 				</div>
 				<div class="picker-label red">
 					Coffee
 				</div>
-			</button>
-			<button class="add" value="9">
+			</div>
+			<div class="add" data-value="i">
 				<div class="picker-img">
 					<img src="img/picker-beer.png" alt="plant">
 				</div>
 				<div class="picker-label purple">
 					Beer
 				</div>
-			</button>
+			</div>
 		</div>
 
 		<div id="picker-5" class="picker-set enterstage">
-			<button class="add" value="10">
+			<div class="add" data-value="j">
 				<div class="picker-img">
 					<img src="img/picker-gun.png" alt="gun">
 				</div>
 				<div class="picker-label purple">
 					Gun
 				</div>
-			</button>
-			<button class="add" value="11">
+			</div>
+			<div class="add" data-value="k">
 				<div class="picker-img">
 					<img src="img/picker-film.png" alt="gun">
 				</div>
 				<div class="picker-label green">
 					Film
 				</div>
-			</button>
-			<button class="add" value="12">
+			</div>
+			<div class="add" data-value="l">
 				<div class="picker-img">
 					<img src="img/picker-neon.png" alt="gun">
 				</div>
 				<div class="picker-label red">
 					Neon
 				</div>
-			</button>
+			</div>
+		</div>
+
+		<div id="picker-done" class="picker-set enterstage">
+			<div class="final-pick">
+				<p>Sent it to a friend:</p>
+				<!--<h2 id="finalUrl"></h2>-->
+				<div class="buttonDepthIcon" id="copyBtn">
+					<div class="topBtn" id="finalUrl"></div>
+					<div class="bottomBtn"></div>
+				</div>
+
+				<ul class="share-icons">
+					<li class="fb">
+						<a></a>
+					</li>
+					<li class="twitter">
+						<a></a>
+					</li>
+					<li class="gplus">
+						<a></a>
+					</li>
+					<li class="mail">
+						<a></a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
@@ -180,7 +209,7 @@
 		<div class="prompt-message" id="scroll-prompt">
 			<h2>Try scrolling</h2>
 		</div>
-		<img src='./img/handpoint.svg' id='handpoint'>
+		<img src='./img/handpoint.svg' id='handpoint' alt='hand'>
 	</div>
 
 

@@ -21,7 +21,6 @@
 
 	#wrapper::-webkit-scrollbar-thumb {
 	    background: rgba(0,0,0,0.15);
-	    /* border: 2px solid black; */
 	}
 
  /* =========================================================
@@ -67,6 +66,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
+	overflow-x: hidden;
 }
 
 button {
@@ -81,6 +81,8 @@ button {
 a {
 	text-transform: uppercase;
 	font-weight: bold;
+	text-decoration: none;
+	color: #f15956;
 }
 
 h1 {
@@ -156,12 +158,18 @@ header {
 	position: fixed;
 	left: 50%;
 	top: 30px;
-	width: 170px;
+	width: 200px;
 	height: 70px;
-	transform: translateX(-50%);
+	-o-transform: 		translateX(-50%);
+	-moz-transform: 	translateX(-50%);
+	-webkit-transform: 	translateX(-50%);
+	transform: 			translateX(-50%);
 	font-size: 2em;
 	color: black;
 	text-align: center;
+	background: url('../img/logo-large.svg');
+	background-size:100%;
+	background-repeat:no-repeat;
 }
 
 nav, #logo, #buildBtn {
@@ -238,12 +246,12 @@ nav, #logo, #buildBtn {
 	background: #f0f0f0;
 }
 
-.buttonDepthIcon.activated .topBtn {
+.buttonDepthIcon.activated .topBtn, .buttonDepthIcon:active .topBtn {
 	background-color: #6fbf46;
 	top: 7px;
 }
 
-.buttonDepthIcon.activated .bottomBtn {
+.buttonDepthIcon.activated .bottomBtn, .buttonDepthIcon:active .bottomBtn{
 	height: 45px;
 	background: #1bb16a;
 	box-shadow: 0px 5px 0px rgba(0,0,0,0.2);
@@ -271,32 +279,6 @@ nav, #logo, #buildBtn {
 
 #done-message .topBtn {
 	text-align: center;
-}
-
-#siteInfo {
-	position: fixed;
-	width: 100%;
-	width: calc(100% - 30px);
-	height: 100%;
-	height: calc(100% - 30px);
-	background: #1abde6;
-	border: 2px solid black;
-	box-sizing: border-box;
-	left: 15px;
-	top: 15px;
-	opacity: 1;
-	z-index: 999;
-	transform: scale(1);
-	-webkit-transition: all 100ms ease;
-	-moz-transition: all 100ms ease;
-	-ms-transition: all 100ms ease;
-	-o-transition: all 100ms ease;
-}
-
-#siteInfo.hidden {
-	opacity: 0;
-	pointer-events:none;
-	transform: scale(0.98);
 }
 
 /* =========================================================
@@ -329,15 +311,12 @@ nav, #logo, #buildBtn {
 	white-space: nowrap;
 	box-sizing: content-box;
 	overflow-x: visible;
-	height: 400px;
 	position: absolute;
 	top: 50%;
 	-webkit-transform: 	translateY(-50%);
 	-moz-transform: 	translateY(-50%);
 	transform: 			translateY(-50%);
-
-	height: 100%;
-	max-height: 400px;
+	height: 400px;
 	min-width: 100%;
 	padding-right: 100px;
 }
@@ -348,18 +327,23 @@ nav, #logo, #buildBtn {
 	height: 100%;
 	z-index: 3;
 	box-sizing: content-box;
-}
-
-.goods {
-	height: 100%;
-	font-size: 2em;
-	float: left;
-	min-width: 300px;
+	overflow-y: hidden;
 	position: relative;
 }
 
-.goods.activated {
-	
+.goods {
+	height: 200%;
+	font-size: 2em;
+	overflow: hidden;
+}
+
+.goods.final {
+	height: 100% !important;
+	margin-top: 0 !important;
+}
+
+.goods.final img {
+	margin-top: 0 !important;
 }
 
 #picker {
@@ -378,7 +362,7 @@ nav, #logo, #buildBtn {
 	bottom: -300px;
 }
 
-#picker button {
+#picker .add {
 	background: rgba(0,0,0,0);
 	border: 0;
 	display: inline-block;
@@ -387,14 +371,23 @@ nav, #logo, #buildBtn {
 	height: 150px;
 	position: relative;
 	padding: 0;
+	cursor: pointer;
 }
 
 .picker-img {
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: 0;
 	height: 110px;
 	width: 100%;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+}
+
+.add:hover .picker-img {
+	top: 0;
 }
 
 .picker-img img {
@@ -415,7 +408,7 @@ nav, #logo, #buildBtn {
 }
 
 .picker-set {
-	width: 100%%;
+	width: 100%;
 	height: 150px;
 	display: inline-block;
 	position: absolute;
@@ -441,6 +434,47 @@ nav, #logo, #buildBtn {
 	margin-left: -100%;
 }
 
+.final-pick {
+	width: initial;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	margin-top: -15px;
+}
+
+.final-pick ul {
+	padding:0;
+	margin: 0;
+	margin-top: 15px;
+}
+
+.final-pick ul li {
+	list-style: none;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 0 10px;
+}
+
+.final-pick ul li.fb {
+	background: url('../img/share-icon-fb.png');
+	background-size: cover;
+}
+
+.final-pick ul li.twitter {
+	background: url('../img/share-icon-twitter.png');
+	background-size: cover;
+}
+
+.final-pick ul li.gplus {
+	background: url('../img/share-icon-gplus.png');
+	background-size: cover;
+}
+
+.final-pick ul li.mail {
+	background: url('../img/share-icon-email.png');
+	background-size: cover;
+}
 
 .message {
 	float: left;
@@ -451,6 +485,10 @@ nav, #logo, #buildBtn {
 	opacity: 0;
 	font-size: 15px;
 	box-sizing: border-box;
+}
+
+.goods.activated {
+	height: 200%;
 }
 
 .goods.activated.message {
@@ -465,13 +503,13 @@ nav, #logo, #buildBtn {
 	z-index: 99;
 	padding: 30px;
 	text-align: center;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
+	-webkit-transform: 	translate(-50%,-50%);
+	-moz-transform: 	translate(-50%,-50%);
+	transform: 			translate(-50%,-50%);
 	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
+	-moz-transition: 	all 250ms ease-in-out;
+	-ms-transition: 	all 250ms ease-in-out;
+	-o-transition:		all 250ms ease-in-out;
 	background: rgba(0,0,0,0);
 	box-sizing: border-box;
 	height: 280px;
@@ -487,7 +525,6 @@ h2 {
 	font-size: 1.5em;
 	display: block;
 	margin: 0;
-	opacity: 0.8;
 }
 
 #input.onscreen {
@@ -618,6 +655,10 @@ img#handpoint {
 	height: 100%;
 }
 
+.goods.activated img {
+	margin-top: -400px;
+}
+
 #callToActionBlock.choose img#handpoint {
 	transform: 			rotate(90deg) translateY(-40px);
 	-webkit-transform: 	rotate(90deg) translateY(-40px);
@@ -658,6 +699,7 @@ img#handpoint {
 	right: 50px;
 	width: 220px;
 	text-align: center;
+	white-space: normal;
 }
 
 .film-message, .neon-message {
@@ -666,6 +708,7 @@ img#handpoint {
 	top: 30%;
 	width: 320px;
 	text-align: center;
+	white-space: normal;
 }
 
 .neon-message {
@@ -673,4 +716,23 @@ img#handpoint {
 	font-size: 1.5em;
 	text-shadow: 0 0 5px black;
 	color: #f15956;
+	white-space: normal;
+}
+
+.invisible {
+	display: none;
+}
+
+#copyBtn {
+	width: 180px;
+	margin: 0 auto;
+}
+
+#copyBtn div {
+	width: 100% !important;
+	text-align: center;
+}
+
+span.name {
+	font-size: 1.8em;
 }

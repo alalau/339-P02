@@ -3,7 +3,43 @@
  * Media Query Styles
  * ========================================================= */
 
-/* Tablets (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 700px) {
+
+	.picker-img {
+		top: 0px;
+	}
+
+	#callToActionBlock, #rube-container {
+		height: 300px;
+	}
+
+	#callToActionBlock.choose .prompt-message {
+		margin-top: -20px;
+	}
+
+	#callToActionBlock .prompt-message {
+		margin-top: 0px;
+	}
+
+	.gun-message {
+		right: 40px;
+		width: 160px;
+		font-size: 0.8em;
+	}
+
+	.film-message, .neon-message {
+		right: 20px;
+		top: 25%;
+		width: 276px;
+		font-size: 0.8em;
+	}
+
+	.goods.activated img {
+		margin-top: -300px;
+	}
+}
+
 @media only screen 
 and (max-width : 550px) {
 	.white-border {
@@ -19,20 +55,62 @@ and (max-width : 550px) {
 		font-size: 1em;
 	}
 
-	.buttonDepthIcon div {
+	.headerBtn .buttonDepthIcon div {
 		width: 45px;
 		overflow: hidden;
 		color: rgba(0,0,0,0) !important;
 		border-radius: 30px;
 	}
 
-	.buttonDepthIcon {
+	.headerBtn .buttonDepthIcon {
 		width: 45px;
 	}
 
-	.topBtn {
-		background-size: 45px !important;
-		background-position: -2px -2px !important;
+	.headerBtn .topBtn {
+		background-size: 47px !important;
+		background-position: -3px -3px !important;
+	}
+
+	#logo {
+		width: 60px;
+		background: url('../img/logo-small.svg');
+		background-size:100%;
+		background-repeat:no-repeat;
+	}
+
+	#callToActionBlock, #rube-container {
+		height: 200px;
+	}
+
+	.gun-message {
+		right: 20px;
+		width: 120px;
+		font-size: 0.5em;
+	}
+
+	.film-message, .neon-message {
+		right: 15px;
+		top: 25%;
+		width: 180px;
+		font-size: 0.5em;
+	}
+
+	#infoBtn {
+		top: 15px;
+		left: 15px;
+	}
+
+	#buildBtn {
+		top: 15px;
+		right: 15px;
+	}
+
+	#logo {
+		top: 15px;
+	}
+
+	.goods.activated img {
+		margin-top: -200px;
 	}
 }
 
