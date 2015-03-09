@@ -33,14 +33,14 @@ function moveCallToAction() {
         $("#callToActionBlock").css({
             left: newLeft
         })
-        $('#scroll-prompt').css({
+        $('#promptss').css({
             opacity: 0
         })
     } else {
         $("#callToActionBlock").css({
             left: ($(window).width() / 2)
         })
-        $('#scroll-prompt').css({
+        $('#promptss').css({
             opacity: 1
         })
     }

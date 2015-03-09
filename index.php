@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body id="build">
 	<?php
 		$name = "friend";
 		$parts = 'aeghj';

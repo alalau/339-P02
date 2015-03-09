@@ -433,6 +433,9 @@ nav, #logo, #buildBtn {
 	padding: 10px;
 	border: 2px solid black;
 	box-sizing: border-box;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
 }
 
 .picker-set {
