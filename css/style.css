@@ -9,17 +9,13 @@
  * Scrollbars
  * ========================================================= */
 
-	#wrapper::-webkit-scrollbar {
+	#wrapper::-webkit-scrollbar, body::-webkit-scrollbar {
 	    height: 15px;
 	    padding: 20px;
 	    background: white;
 	}
 
-	#wrapper::-webkit-scrollbar-track {
-
-	}
-
-	#wrapper::-webkit-scrollbar-thumb {
+	#wrapper::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
 	    background: rgba(0,0,0,0.15);
 	}
 
@@ -59,6 +55,15 @@
  * Baseline
  * ========================================================= */
 
+.clearfix {
+    display: inline-block;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+}
+
 body {
 	background: #e2e2e2;
 	font-size: 15px;
@@ -69,7 +74,7 @@ body {
 }
 
 body#about { background: #cb9ac7; }
-body#build { background: #1abde6; }
+body#build { background: #1ebaed; }
 
 button {
 	padding: 10px 15px;
@@ -84,7 +89,7 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
-	color: #f15956;
+	color: black;
 }
 
 h1 {
@@ -94,14 +99,33 @@ h1 {
 
 .container {
 	width: 100%;
-	max-width: 800px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
 .pushBelowHeader {
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
+.person img {
+	width: 140px;
+	margin-bottom: 15px;
+}
+
+#people {
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+
+#about p {
+	line-height: 1.5;
+}
+
+img#pigeon {
+	width: 120px;
+	margin: 30px auto;
+	display: block;
+}
 
 /* =========================================================
  * Header
@@ -131,6 +155,7 @@ h1 {
 	width: 100%;
 	left: 0;
 	top: 0;
+	z-index: 999999;
 }
 
 .white-border.bottom {
@@ -148,7 +173,7 @@ header {
 }
 
 #aboutBtn {
-	position: fixed;
+	position: absolute;
 	right: 10px;
 	top: 10px;
 	padding: 20px;
@@ -157,7 +182,7 @@ header {
 }
 
 #logo {
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	top: 30px;
 	width: 200px;
