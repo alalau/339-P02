@@ -384,13 +384,16 @@ footer {
 	margin-left: 180px;
 }
 
+h2 {
+	color: black !important;
+}
+
 h3.section-title {
-	border-bottom: 2px solid rgba(0,0,0,0.1);
-	padding-bottom: 10px;
+	margin-bottom: 45px;
 }
 
 h3.section-title span {
-	background: #fff;
+	background: #e2e2e2;
 }
 
 #buttons .buttonDepthIcon {
