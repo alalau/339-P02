@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 	
-	<title>Rube Goldbery Message Machine</title>
+	<title>Rube Goldberg Message Machine</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/media-query.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="js/horwheel.js"></script>
+	<script src="js/horizontal-scrolling.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
@@ -22,7 +22,7 @@
 	<?php
 		$name = "friend";
 		$parts = 'aeghj';
-		$message = 'Good Job! Now build your own!';
+		$message = 'Good Job! Now <a href="build.html">build your own!</a>';
 		if (isset($_GET['n'])) { $name = $_GET['n']; }
 		if (isset($_GET['p'])) { $parts = $_GET['p']; }
 		if (isset($_GET['m'])) { $message = $_GET['m']; }
@@ -34,7 +34,7 @@
 		<div id="logo"></div>
 	</a>
 
-	<a href="build.html" class="headerBtn">
+	<a href="info.html" class="headerBtn">
 		<div class="buttonDepthIcon" id="infoBtn">
 			<div class="topBtn">INFO</div>
 			<div class="bottomBtn"></div>

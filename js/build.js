@@ -1,3 +1,10 @@
+$(document).ready(function() {
+    $('#wrapper').mousewheel(function(e, delta) {
+        this.scrollLeft -= (delta * 40);
+        e.preventDefault();
+    });
+});
+
 /* -----------------------------------------------------------
     Resize the spacer block to position the parts correctly
 ----------------------------------------------------------- */
@@ -43,16 +50,6 @@ function moveCallToAction() {
     moveCallToAction();
     spacerSize();
 });
-
-
-
-/* -----------------------------------------------------------
-	Horizontal Scrolling
------------------------------------------------------------ */
-
-	var wrapper = document.querySelector('#wrapper');
-horwheel(wrapper);
-
 
 /* -----------------------------------------------------------
     Enter Message Box
@@ -181,7 +178,7 @@ function createPart( what ){
         return $(part_beer);
     }
     else if (what == 'j') {
-        return $("<div class='block part last'><div class='goods final'><img src='./img/gun.png'><div class='gun-message'>" + message + "</div></div>");
+        return $("<div class='block part last'><div class='goods'><img src='./img/gun-2.png'><div class='gun-message'>" + message + "</div></div>");
     }
     else if (what == 'k') {
         return $("<div class='block part last'><div class='goods final'><img src='./img/film.png'><div class='film-message'>" + message + "</div></div>");

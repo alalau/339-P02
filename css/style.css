@@ -700,6 +700,11 @@ img#handpoint {
 	width: 220px;
 	text-align: center;
 	white-space: normal;
+	opacity: 0;
+}
+
+.activated .gun-message {
+	opacity: 1;
 }
 
 .film-message, .neon-message {
