@@ -34,7 +34,7 @@
 		<div id="logo"></div>
 	</a>
 
-	<a href="info.html" class="headerBtn">
+	<a href="about.html" class="headerBtn">
 		<div class="buttonDepthIcon" id="infoBtn">
 			<div class="topBtn">INFO</div>
 			<div class="bottomBtn"></div>
