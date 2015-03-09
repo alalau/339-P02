@@ -42,9 +42,12 @@ and (max-width : 700px) {
 
 @media only screen 
 and (max-width : 550px) {
+
+/*
 	.white-border {
 		display: none;
 	}
+*/
 
 	#input textarea {
 		font-size: 2em;
@@ -54,6 +57,8 @@ and (max-width : 550px) {
 	#input h2 {
 		font-size: 1em;
 	}
+
+	/*
 
 	.headerBtn .buttonDepthIcon div {
 		width: 45px;
@@ -70,12 +75,16 @@ and (max-width : 550px) {
 		background-size: 47px !important;
 		background-position: -3px -3px !important;
 	}
+	*/
 
 	#logo {
+		/*
 		width: 60px;
 		background: url('../img/logo-small.svg');
 		background-size:100%;
 		background-repeat:no-repeat;
+		*/
+		display: none;
 	}
 
 	#callToActionBlock, #rube-container {
@@ -95,6 +104,7 @@ and (max-width : 550px) {
 		font-size: 0.5em;
 	}
 
+/*
 	#infoBtn {
 		top: 15px;
 		left: 15px;
@@ -105,9 +115,11 @@ and (max-width : 550px) {
 		right: 15px;
 	}
 
+
 	#logo {
 		top: 15px;
 	}
+*/
 
 	.goods.activated img {
 		margin-top: -200px;

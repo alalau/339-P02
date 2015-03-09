@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#wrapper').mousewheel(function(e, delta) {
-        this.scrollLeft -= (delta * 40);
+        this.scrollLeft -= (delta);
         e.preventDefault();
     });
 });
