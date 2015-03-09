@@ -389,6 +389,10 @@ h3.section-title {
 	padding-bottom: 10px;
 }
 
+h3.section-title span {
+	background: #fff;
+}
+
 #buttons .buttonDepthIcon {
 	width: 150px;
 	margin-right: 30px;

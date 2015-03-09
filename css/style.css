@@ -97,6 +97,16 @@ h1 {
 	font-weight: bold;
 }
 
+h3 {
+	background: url(../img/2pxblack.png) 0 50% repeat-x;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h3 span {
+	padding: 15px;
+}
+
 .container {
 	width: 100%;
 	max-width: 600px;
@@ -126,6 +136,7 @@ img#pigeon {
 	width: 120px;
 	margin: 30px auto;
 	display: block;
+	margin-bottom: 60px;
 }
 
 /* =========================================================
